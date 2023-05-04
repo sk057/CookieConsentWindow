@@ -1,0 +1,155 @@
+.all-div {
+    background-color: #EFEFEF;
+    width: 525px;
+    padding: 10px;
+    height: 200px;
+    overflow: hidden;
+    transition: height 0.5s;
+    /*height: 598px;*/
+}
+
+.active {
+    height: 598px;
+}
+
+#scrollable-div {
+    /*height: 200px; /* set a fixed height to the div */
+    /*overflow: auto; /* make the div scrollable */
+    position: absolute;
+    width: 350px;
+    height: 225px;
+    left: 63px;
+    top: 100px;
+    overflow-y: scroll;
+}
+#desc-div {
+    position: absolute;
+    width: 253px;
+    height: 105px;
+    left: 22px;
+    top: 26px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #000000;
+}
+#checkboxes-div{
+    position: absolute;
+    width: 250px;
+    height: 120px;
+    left: 285px;
+    top: 23px;
+}
+
+input[type=checkbox]{
+    margin-bottom: 15px;
+    height: 12px;
+}
+
+label{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+#buttons-div{
+    position: absolute;
+    width: 464px;
+    height: 37px;
+    left: 30px;
+    top: 143px;
+}
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    position: absolute;
+    width: 139px;
+    height: 29px;
+    cursor: pointer;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+.button-left{
+    left: 3px;
+    top: 4px;
+}
+.button-center{
+    left: 166px;
+    top: 4px;
+}
+.button-right{
+    left: 322px;
+    top: 4px;
+}
+
+.button-collapsible {
+    background-color: #eee;
+    cursor: pointer;
+    border: none;
+    width: 200px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.active .content-div {
+    display: block;
+}
+
+.content-div {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+#collapsible-div{
+    /*overflow: hidden;*/
+    position: absolute;
+    width: 151px;
+    height: 15px;
+    left: 17px;
+    top: 189px;
+}
+
+td:last-child {
+    padding-left: 10px;
+}
+
+td{
+    vertical-align: top;
+}
+
+#graybox-div{
+    width: 49px;
+    height: 37px;
+    background-color: #A4A4A4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.table-text{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    margin: 0;
+}

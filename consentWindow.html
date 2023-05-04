@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scrollable Div Example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script  src="test.js"></script>
+  </head>
+  <body>
+    <div class="all-div">
+
+        <div id="desc-div">
+            Siekdami lankytojams pasiūlyti geresnes Draugas.lt naršymo sąlygas, naudojame slapukus (angl. cookies). Duotą sutikimą bet kada galėsite atšaukti pakeisdami savo interneto naršyklės nustatymus ir ištrindami įrašytus slapukus. <u><b>Daugiau informacijos</u></b> ir <u><b>Slapukų sąrašas</u></b>.
+        </div>
+
+        <div id="checkboxes-div">
+            <input type="checkbox" id="techniniai" name="techniniai" disabled="disabled" checked="checked">
+            <label for="scales">techniniai slapukai</label><br>
+            <input type="checkbox" id="funkciniai" name="funkciniai">
+            <label for="scales">funkciniai slapukai</label><br>
+            <input type="checkbox" id="analitiniai" name="analitiniai">
+            <label for="scales">analitiniai slapukai</label><br>
+            <input type="checkbox" id="tiksliniai" name="tiksliniai">
+            <label for="scales">tiksliniai arba reklaminiai slapukai</label><br>
+        </div>
+
+        <div id="buttons-div">
+            <input type="button" class="button button-left" onclick="uncheckAll()" value="Sutinku tik su būtinais">
+            <input type="button" class="button button-center" onclick="checkAll()" value="Sutinku su visais">
+            <input type="button" class="button button-right" value="Išsaugoti pasirinkimus">
+        </div>
+
+        <div id="collapsible-div">
+            <button class="button-collapsible">Ʌ Slapukų naudojimo tikslai</button>
+            <div class="content-div">
+                <div id="scrollable-div">
+                    <table>
+                        <tr>
+                            <td><div id="graybox-div"><p class="table-text">vardas</p></div></td>
+                            <td><img src="assets/dataused.png" alt="Data used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                        </tr>
+                        <tr>
+                            <td><div id="graybox-div"><p class="table-text">amžius</p></div></td>
+                            <td><img src="assets/dataused.png" alt="Data used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                        </tr>
+                        <tr>
+                            <td><div id="graybox-div"><p class="table-text">lytis</p></div></td>
+                            <td><img src="assets/dataused.png" alt="Data used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                        </tr>
+                        <tr>
+                            <td><div id="graybox-div"><p class="table-text">el. paštas</p></div></td>
+                            <td><img src="assets/dataused.png" alt="Data used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                        </tr>
+                        <tr>
+                            <td><div id="graybox-div"><p class="table-text">IP adresas</p></div></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/consentnotgiven.png" class="funkciniaiImg" alt="Consent not given"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                        </tr>
+                        <tr>
+                            <td><div id="graybox-div"><p class="table-text">unikalus ID</p></div></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                        </tr>
+                        <tr>
+                            <td><div id="graybox-div"><p class="table-text">įrenginio informa- cija</p></div></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                        </tr>
+                        <tr>
+                            <td><div id="graybox-div"><p class="table-text">laikas svetai- nėje</p></div></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                        </tr>
+                        <tr>
+                            <td><div id="graybox-div"><p class="table-text">apsilan- kymų skaičius</p></div></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                        </tr>
+                        <tr>
+                            <td><div id="graybox-div"><p class="table-text">svetainės versija</p></div></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/consentnotgiven.png" class="funkciniaiImg"  alt="Consent not given"></td>
+                            <td><img src="assets/consentnotgiven.png" alt="Consent not given"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                            <td><img src="assets/datanotused.png" alt="Data not used"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<script  src="test.js"></script>-->
+  </body>
+</html>
