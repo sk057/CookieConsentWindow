@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener("click", () => {
         content.classList.toggle("active");
 
-        if (button.textContent === "Ʌ Slapukų naudojimo tikslai") {
-          button.textContent = "V Slapukų naudojimo tikslai";
+        if (button.textContent === "▲ Slapukų naudojimo tikslai") {
+          button.textContent = "▼ Slapukų naudojimo tikslai";
         } else {
-          button.textContent = "Ʌ Slapukų naudojimo tikslai";
+          button.textContent = "▲ Slapukų naudojimo tikslai";
         }
     });
 
