@@ -1,39 +1,29 @@
 console.log('JavaScript code is being executed');
 document.addEventListener('DOMContentLoaded', function() {
-      //collapsible
+    
     const button = document.querySelector(".button-collapsible");
     const content = document.querySelector(".all-div");
     const funkciniaiCheckbox = document.getElementById('funkciniai');
     const funkciniaiImages = document.querySelectorAll('.funkciniaiImg');
+    const analitiniaiCheckbox = document.getElementById('analitiniai');
+    const analitiniaiImages = document.querySelectorAll('.analitiniaiImg');
+    const tiksliniaiCheckbox = document.getElementById('tiksliniai');
+    const tiksliniaiImages = document.querySelectorAll('.tiksliniaiImg');
+    const trecSalysImages = document.querySelectorAll('.trecsalysImg');
 
-      // Toggle the content when the button is clicked
     button.addEventListener("click", () => {
         content.classList.toggle("active");
-        /*content.style.display = content.style.display === "block" ? "none" : "block";*/
 
         if (button.textContent === "Ʌ Slapukų naudojimo tikslai") {
           button.textContent = "V Slapukų naudojimo tikslai";
         } else {
           button.textContent = "Ʌ Slapukų naudojimo tikslai";
         }
-        /*content.addEventListener("transitionend", () => {
-          collapsiblecont.style.display = collapsiblecont.style.display === "block" ? "none" : "block";
-        });*/
     });
 
-    changeImg(funkciniaiCheckbox, funkciniaiImages);
-
-    /*funkciniaiCheckbox.addEventListener('change', function() {
-      if (this.checked) {
-        funkciniaiImages.forEach(function(image) {
-          image.src = 'assets/consentgiven.png';
-        });
-      } else {
-        funkciniaiImages.forEach(function(image) {
-          image.src = 'assets/consentnotgiven.png';
-        });
-      }
-    });*/
+    changeImg(funkciniaiCheckbox, funkciniaiImages, trecSalysImages);
+    changeImg(analitiniaiCheckbox, analitiniaiImages, trecSalysImages);
+    changeImg(tiksliniaiCheckbox, tiksliniaiImages, trecSalysImages);
   });
 
   function checkAll() {
@@ -52,17 +42,39 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  function changeImg(checkbox, images) {
+  function changeImg(checkbox, images, trecSalysImages) {
     checkbox.addEventListener('change', function() {
       if (this.checked) {
         images.forEach(function(image) {
           image.src = 'assets/consentgiven.png';
+          image.alt = 'Consent given';
+          changeTrecSalImg(trecSalysImages);
         });
       } else {
         images.forEach(function(image) {
           image.src = 'assets/consentnotgiven.png';
+          image.alt = 'Consent not given';
+          changeTrecSalImg(trecSalysImages);
         });
       }
     });
+  }
+
+  function changeTrecSalImg(trecSalysImages){
+    for (var i = 0; i < trecSalysImages.length; i++){
+      funkciniaiSib = trecSalysImages[i].parentElement.previousElementSibling.previousElementSibling.previousElementSibling.querySelector('.funkciniaiImg');
+      analitiniaiSib = trecSalysImages[i].parentElement.previousElementSibling.previousElementSibling.querySelector('.analitiniaiImg');
+      tiksliniaiSib = trecSalysImages[i].parentElement.previousElementSibling.querySelector('.tiksliniaiImg');
+      if (funkciniaiSib && funkciniaiSib.alt == 'Consent given' || analitiniaiSib.alt == 'Consent given' || tiksliniaiSib.alt == 'Consent given'){
+        trecSalysImages[i].src = 'assets/consentgiven.png';
+      }
+      else if (analitiniaiSib.alt == 'Consent given' || tiksliniaiSib.alt == 'Consent given'){
+        trecSalysImages[i].src = 'assets/consentgiven.png';
+      }
+      else{
+        trecSalysImages[i].src = 'assets/consentnotgiven.png';
+      }
+    }
+    
   }
   
