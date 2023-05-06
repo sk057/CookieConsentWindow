@@ -1,4 +1,3 @@
-console.log('JavaScript code is being executed');
 document.addEventListener('DOMContentLoaded', function() {
     
     const button = document.querySelector(".button-collapsible");
