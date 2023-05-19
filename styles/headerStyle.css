@@ -1,0 +1,71 @@
+#tableHeader-div{
+    position: absolute;
+    width: 399px;
+    height: 69px;
+    left: 40px;
+    top: 30px;
+}
+
+#kokiaisTikslais-text{
+    position: absolute;
+    left: 19.8%;
+    right: 39.6%;
+    top: 11%;
+    bottom: 65.22%;
+}
+
+#suKuoDalijames-text{
+    position: absolute;
+    left: 74.44%;
+    right: -7.53%;
+    top: 11%;
+    bottom: 65.22%;
+}
+
+#kokieDuomenys-text{
+    position: absolute;
+    left: 4%;
+    right: 80.69%;
+    top: 52%;
+    bottom: 4.35%;
+}
+
+#prisijungiant-div{
+    position: absolute;
+    left: 19.5%;
+    right: 65.91%;
+    top: 46%;
+    bottom: 0%;
+}
+
+#veikimas-div{
+    position: absolute;
+    left: 32.84%;
+    right: 52.88%;
+    top: 46%;
+    bottom: 0%;
+}
+
+#statistika-div{
+    position: absolute;
+    left: 46%;
+    right: 39.35%;
+    top: 46%;
+    bottom: 0%;
+}
+
+#rinkodara-div{
+    position: absolute;
+    left: 59%;
+    right: 26.07%;
+    top: 46%;
+    bottom: 0%;
+}
+
+#trecsalys-div{
+    position: absolute;
+    left: 74.44%;
+    right: 11.28%;
+    top: 46%;
+    bottom: 0%;
+}

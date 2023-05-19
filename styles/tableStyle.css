@@ -1,0 +1,24 @@
+td:last-child {
+    padding-left: 10px;
+}
+
+td{
+    vertical-align: top;
+}
+
+.graybox-div{
+    width: 49px;
+    height: 37px;
+    background-color: #A4A4A4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.table-text{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    margin: 0;
+}

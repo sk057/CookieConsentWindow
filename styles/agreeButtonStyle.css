@@ -1,0 +1,41 @@
+#buttons-div{
+    position: absolute;
+    width: 464px;
+    height: 37px;
+    left: 35px;
+    top: 143px;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    position: absolute;
+    width: 139px;
+    height: 29px;
+    cursor: pointer;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.button-left{
+    left: 3px;
+    top: 4px;
+}
+
+.button-center{
+    left: 162px;
+    top: 4px;
+}
+
+.button-right{
+    left: 322px;
+    top: 4px;
+}

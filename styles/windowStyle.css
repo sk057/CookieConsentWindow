@@ -1,0 +1,52 @@
+.all-div {
+    background-color: #EFEFEF;
+    width: 500px;
+    padding: 10px;
+    height: 200px;
+    overflow: hidden;
+    transition: height 0.5s;
+    /*height: 598px;*/
+}
+
+#desc-div {
+    position: absolute;
+    width: 253px;
+    height: 105px;
+    left: 22px;
+    top: 26px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 15px;
+
+    color: #000000;
+}
+
+a{
+    color: black;
+}
+
+#checkboxes-div{
+    position: absolute;
+    width: 250px;
+    height: 120px;
+    left: 285px;
+    top: 23px;
+}
+
+input[type=checkbox]{
+    margin-bottom: 15px;
+    height: 12px;
+}
+
+label{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+}

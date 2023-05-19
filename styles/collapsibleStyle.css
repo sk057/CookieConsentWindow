@@ -1,0 +1,44 @@
+.button-collapsible {
+    background-color: #eee;
+    cursor: pointer;
+    border: none;
+    width: 200px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.active .content-div {
+    display: block;
+}
+
+.content-div {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+#collapsible-div{
+    position: absolute;
+    width: 151px;
+    height: 15px;
+    left: 27px;
+    top: 189px;
+}
+
+.active {
+    height: 580px;
+}
+
+#scrollable-div {
+    position: absolute;
+    width: 350px;
+    height: 225px;
+    left: 63px;
+    top: 100px;
+    overflow-y: scroll;
+}

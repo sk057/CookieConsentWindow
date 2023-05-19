@@ -1,0 +1,24 @@
+.tooltip .tooltipText {
+    visibility: hidden;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 25%;
+    right: 15%;
+    margin-left: -85px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    text-align: center;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.tooltip:hover .tooltipText {
+    visibility: visible;
+    opacity: 1;
+}
