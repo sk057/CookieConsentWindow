@@ -20,6 +20,26 @@
     display: none;
     overflow: hidden;
     background-color: white;
+    animation: showContent 0.5s forwards;
+}
+
+@keyframes showContent {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+    }
+    50%{
+      display: block;
+      opacity: 0;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+    }
 }
 
 #collapsible-div{
